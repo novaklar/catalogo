@@ -344,3 +344,11 @@ footer {
         height: 180px;
     }
 }
+footer {
+    background: var(--primary-color) !important; /* #00128F */
+    color: white !important;
+}
+
+footer .container p {
+    color: inherit !important;
+}
