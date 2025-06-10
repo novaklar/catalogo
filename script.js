@@ -1,3 +1,23 @@
+// Colores personalizados para cada plataforma (1-15 como especificado)
+const platformColors = {
+    // Streaming
+    "Netflix": "#E50914", // 1
+    "HBO Max": "#00040C", // 2
+    "Disney+ Estándar": "linear-gradient(135deg, #022336, #19BAC6)", // 3
+    "Disney+ Premium": "linear-gradient(135deg, #022336, #19BAC6)", // 4
+    "Prime Video": "#0779FF", // 5
+    "Paramount+": "#0665FE", // 6
+    "Rakuten Viki": "#0C9BFF", // 7
+    "DirecTV Go": "#021327", // 8
+    "IPTV Premium": "#4E37E5", // 9
+    "YouTube Premium": "#ED1D24", // 10
+    "Crunchyroll": "#FF5F01", // 11
+    "VIX+": "linear-gradient(135deg, #FF8448, #FF3D79)", // 12
+    "Universal+": "#FBCC11", // 13
+    "Plex Premium": "#000000", // 14
+    "Apple TV+": "#000000" // 15
+};
+
 // Datos de productos (solo streaming)
 const products = [
     {
@@ -147,12 +167,41 @@ function renderProducts(productsToRender) {
                 <img src="${product.image}" alt="${product.title}">
             </div>
             <div class="product-info">
-                <span class="product-category ${'category-' + product.category}">${getCategoryName(product.category)}</span>
                 <h3 class="product-title">${product.title}</h3>
-                <div class="product-description">${product.description}</div>
                 <div class="product-price">${product.price}</div>
             </div>
+            <div class="product-details">
+                <button class="close-details">&times;</button>
+                <span class="product-category">${getCategoryName(product.category)}</span>
+                <div class="product-description">${product.description}</div>
+            </div>
         `;
+        
+        // Establecer color de fondo personalizado
+        const detailsElement = productCard.querySelector('.product-details');
+        const platformColor = platformColors[product.title] || '#00128F';
+        detailsElement.style.background = platformColor;
+        
+        // Añadir evento de clic para mostrar detalles
+        productCard.addEventListener('click', function(e) {
+            // Evitar que se active cuando se hace clic en el botón de cerrar
+            if (!e.target.classList.contains('close-details')) {
+                // Cerrar cualquier otro producto abierto
+                document.querySelectorAll('.product-card.active').forEach(card => {
+                    if (card !== this) card.classList.remove('active');
+                });
+                
+                // Abrir este producto
+                this.classList.add('active');
+            }
+        });
+        
+        // Añadir evento para cerrar detalles
+        const closeBtn = productCard.querySelector('.close-details');
+        closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            productCard.classList.remove('active');
+        });
         
         catalog.appendChild(productCard);
     });
@@ -205,6 +254,15 @@ document.getElementById('searchInput').addEventListener('input', function() {
     );
     
     renderProducts(filteredProducts);
+});
+
+// Cerrar detalles al hacer clic fuera
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.product-card')) {
+        document.querySelectorAll('.product-card.active').forEach(card => {
+            card.classList.remove('active');
+        });
+    }
 });
 
 // Inicializar catálogo
