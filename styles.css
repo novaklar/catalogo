@@ -19,17 +19,19 @@
 }
 
 body {
-    background-color: #f9f9f9;
+    background-color: rgba(108, 145, 255, 0.1); /* #6C91FF con 10% de opacidad */
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 .main-header {
     background: var(--primary-color);
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
+    margin-bottom: 2rem; /* Aumentado el espacio debajo del header */
 }
 
 .logo {
@@ -237,7 +239,7 @@ body {
 }
 
 .search-container {
-    margin: 1.5rem auto;
+    margin: 2.5rem auto 1.5rem; /* Aumentado el margen superior para más espacio */
     max-width: 600px;
     position: relative;
 }
@@ -319,11 +321,16 @@ footer {
     }
     
     .search-container {
-        margin: 1rem auto;
+        margin: 2rem auto 1rem; /* Ajuste para móvil manteniendo más espacio */
     }
     
     .logo {
         height: 40px;
+    }
+    
+    .main-header {
+        padding: 1.2rem 0;
+        margin-bottom: 1.5rem; /* Ajuste para móvil */
     }
 }
 
