@@ -295,7 +295,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Media Queries */
+/* Media Queries - Versión móvil */
 @media (max-width: 768px) {
     .main-header {
         display: none;
@@ -303,41 +303,50 @@ footer {
     
     .catalog {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 15px; /* Reducido de 25px a 15px */
+        margin: 1rem 0; /* Reducido el margen vertical */
     }
     
     h1 {
         font-size: 1.8rem;
     }
     
-    .product-image {
-        height: 200px;
+    .product-card {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
     }
     
-    .product-card {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .product-image {
+        height: 140px; /* Reducido de 200px a 140px */
+    }
+    
+    .product-info {
+        padding: 10px; /* Reducido de 12px a 10px */
     }
     
     .product-title {
-        font-size: 1.1rem;
-        margin-bottom: 8px;
+        font-size: 0.95rem; /* Reducido de 1.1rem a 0.95rem */
+        margin-bottom: 4px; /* Reducido de 8px a 4px */
     }
     
     .product-price {
-        font-size: 1.2rem;
+        font-size: 1rem; /* Reducido de 1.2rem a 1rem */
     }
     
     .product-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem; /* Reducido de 0.9rem a 0.85rem */
     }
     
     .filters {
-        padding: 1rem 10px;
+        padding: 0.8rem 8px; /* Ajustado el padding */
     }
     
     .filter-btn {
-        padding: 8px 16px;
-        font-size: 0.95rem;
+        padding: 6px 12px; /* Reducido de 8px 16px a 6px 12px */
+        font-size: 0.85rem; /* Reducido de 0.95rem a 0.85rem */
+    }
+    
+    .search-container {
+        margin: 1rem auto; /* Reducido de 1.5rem a 1rem */
     }
 }
 
