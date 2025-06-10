@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Novaklar</title>
+    <title>Catalogo novaklar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="https://raw.githubusercontent.com/novaklar/web/refs/heads/main/Novaklar.svg" alt="Logo Novaklar" class="logo">
-            <span class="novaklar-text">novaklar</span>
+        <div class="container">
+            <div class="logo-container">
+                <h1>Catalogo novaklar</h1>
+            </div>
+            <p class="subtitle">Innovación a tu alcance</p>
         </div>
     </header>
     
-    <main>
-        <h1 class="catalog-title">STREAMING</h1>
-        <div id="catalogContainer"></div>
-    </main>
+    <div class="container">
+        <div class="search-container">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-bar" placeholder="Buscar plataformas..." id="searchInput">
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="streaming">Streaming</button>
+            <button class="filter-btn" data-filter="games">Juegos</button>
+            <button class="filter-btn" data-filter="apps">Aplicaciones</button>
+            <button class="filter-btn" data-filter="courses">Cursos</button>
+        </div>
+        
+        <div class="catalog" id="productCatalog">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Catalogo novaklar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
