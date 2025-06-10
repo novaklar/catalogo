@@ -270,8 +270,8 @@ body {
 footer {
     text-align: center;
     padding: 1.5rem 0;
-    background: var(--dark-color);
-    color: white;
+    background: var(--primary-color); /* #00128F */
+    color: white; /* Texto en blanco para mejor legibilidad */
     margin-top: 2rem;
     font-size: 0.9rem;
 }
