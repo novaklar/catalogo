@@ -6,6 +6,7 @@
     <title>Catalogo novaklar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,12 +28,14 @@
             <input type="text" class="search-bar" placeholder="Buscar plataformas..." id="searchInput">
         </div>
         
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="streaming">Streaming</button>
-            <button class="filter-btn" data-filter="games">Juegos</button>
-            <button class="filter-btn" data-filter="apps">Aplicaciones</button>
-            <button class="filter-btn" data-filter="courses">Cursos</button>
+        <div class="filters-container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="streaming">Streaming</button>
+                <button class="filter-btn" data-filter="games">Juegos</button>
+                <button class="filter-btn" data-filter="apps">Aplicaciones</button>
+                <button class="filter-btn" data-filter="courses">Cursos</button>
+            </div>
         </div>
         
         <div class="catalog" id="productCatalog">
