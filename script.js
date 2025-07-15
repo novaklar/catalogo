@@ -47,9 +47,9 @@ const platformColors = {
     "Canva Anual": "linear-gradient(135deg, #12BACD, #7C2AE6)",
     "CapCut Mensual": "#000000",
     "CapCut Trimestral": "#000000",
-    "Facebook Blue": "#1977F3",
     
     // Social+
+    "Facebook Blue": "#1977F3",
     "Instagram 260+260": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
     "Instagram 500+1000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
     "Instagram 1000+2000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
@@ -402,20 +402,20 @@ const products = [
         category: "apps",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/19.png"
     },
-    {
-        id: 24,
-        title: "Facebook Blue",
-        description: "Gestiona redes sociales, contenidos virales y conecta con tu audiencia.",
-        price: "$15.000/mes",
-        category: "apps",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/20.png"
-    },
     
     // Social+
     {
+        id: 24,
+        title: "Facebook",
+        description: "Gestiona redes sociales, contenidos virales y conecta con tu audiencia.",
+        price: "$15.000/mes",
+        category: "social",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/20.png"
+    },
+    {
         id: 2501,
         title: "Instagram 260+260",
-        description: "260 seguidores + 260 likes reales para mejorar tu perfil.",
+        description: "260 seguidores + 260 likes para mejorar tu perfil.",
         price: "$14.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -423,7 +423,7 @@ const products = [
     {
         id: 2502,
         title: "Instagram 500+1000",
-        description: "500 seguidores + 1000 likes reales para mejorar tu perfil.",
+        description: "500 seguidores + 1000 likes para mejorar tu perfil.",
         price: "$25.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -431,7 +431,7 @@ const products = [
     {
         id: 2503,
         title: "Instagram 1000+2000",
-        description: "1000 seguidores + 2000 likes reales para mejorar tu perfil.",
+        description: "1000 seguidores + 2000 likes para mejorar tu perfil.",
         price: "$37.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -439,7 +439,7 @@ const products = [
     {
         id: 2504,
         title: "Instagram 500",
-        description: "500 seguidores reales para mejorar tu perfil.",
+        description: "500 seguidores para mejorar tu perfil.",
         price: "$16.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -447,7 +447,7 @@ const products = [
     {
         id: 2505,
         title: "Instagram 1000",
-        description: "1000 seguidores reales para mejorar tu perfil.",
+        description: "1000 seguidores para mejorar tu perfil.",
         price: "$27.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -455,7 +455,7 @@ const products = [
     {
         id: 2506,
         title: "Instagram 2000",
-        description: "2000 seguidores reales para mejorar tu perfil.",
+        description: "2000 seguidores para mejorar tu perfil.",
         price: "$42.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
@@ -464,7 +464,7 @@ const products = [
     {
         id: 2601,
         title: "TikTok 500",
-        description: "500 seguidores reales para aumentar tu presencia en TikTok.",
+        description: "500 seguidores para aumentar tu presencia en TikTok.",
         price: "$22.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
@@ -472,7 +472,7 @@ const products = [
     {
         id: 2602,
         title: "TikTok 1000",
-        description: "1000 seguidores reales para aumentar tu presencia en TikTok.",
+        description: "1000 seguidores para aumentar tu presencia en TikTok.",
         price: "$36.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
@@ -480,7 +480,7 @@ const products = [
     {
         id: 2603,
         title: "TikTok 2000",
-        description: "2000 seguidores reales para aumentar tu presencia en TikTok.",
+        description: "2000 seguidores para aumentar tu presencia en TikTok.",
         price: "$58.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
@@ -488,7 +488,7 @@ const products = [
     {
         id: 2604,
         title: "TikTok 1000+2000",
-        description: "1000 likes + 2000 vistas reales para aumentar tu presencia en TikTok.",
+        description: "1000 likes + 2000 vistas para aumentar tu presencia en TikTok.",
         price: "$16.000",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
@@ -497,7 +497,7 @@ const products = [
     {
         id: 2701,
         title: "YouTube 1000",
-        description: "1000 suscriptores reales para hacer crecer tu canal.",
+        description: "1000 suscriptores para hacer crecer tu canal.",
         price: "$46.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
@@ -505,7 +505,7 @@ const products = [
     {
         id: 2702,
         title: "YouTube 2000",
-        description: "2000 suscriptores reales para hacer crecer tu canal.",
+        description: "2000 suscriptores para hacer crecer tu canal.",
         price: "$77.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
@@ -513,7 +513,7 @@ const products = [
     {
         id: 2703,
         title: "YouTube 1000 Vistas",
-        description: "1000 vistas reales para tus videos.",
+        description: "1000 vistas para tus videos.",
         price: "$24.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
@@ -521,7 +521,7 @@ const products = [
     {
         id: 2704,
         title: "YouTube 1000 Likes",
-        description: "1000 likes reales para tus videos.",
+        description: "1000 likes para tus videos.",
         price: "$18.000",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
@@ -530,7 +530,7 @@ const products = [
     {
         id: 2801,
         title: "Telegram 1000",
-        description: "1000 miembros reales para tu canal o grupo de Telegram.",
+        description: "1000 miembros para tu canal o grupo de Telegram.",
         price: "$28.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/24.png"
@@ -538,7 +538,7 @@ const products = [
     {
         id: 2802,
         title: "Telegram 2000",
-        description: "2000 miembros reales para tu canal o grupo de Telegram.",
+        description: "2000 miembros para tu canal o grupo de Telegram.",
         price: "$42.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/24.png"
@@ -547,7 +547,7 @@ const products = [
     {
         id: 29,
         title: "X (Twitter) 1000",
-        description: "1000 seguidores reales para aumentar tu impacto en X (Twitter).",
+        description: "1000 seguidores para aumentar tu impacto en X (Twitter).",
         price: "$36.500",
         category: "social",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/25.png"
