@@ -7,6 +7,7 @@
     --streaming-color: #00128F;
     --games-color: #9b59b6;
     --apps-color: #3498db;
+    --social-color: #e74c3c;
     --courses-color: #2ecc71;
     --logo-color: #6C91FF;
 }
@@ -19,7 +20,7 @@
 }
 
 body {
-    background-color: rgba(108, 145, 255, 0.1); /* #6C91FF con 10% de opacidad */
+    background-color: rgba(108, 145, 255, 0.1);
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -31,13 +32,13 @@ body {
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-bottom: 2rem; /* Aumentado el espacio debajo del header */
+    margin-bottom: 2rem;
 }
 
 .logo {
     height: 50px;
     width: auto;
-    filter: brightness(0) saturate(100%) invert(63%) sepia(64%) saturate(7483%) hue-rotate(209deg) brightness(101%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(90%) saturate(1255%) hue-rotate(200deg) brightness(101%) contrast(101%);
 }
 
 .container {
@@ -106,9 +107,9 @@ body {
     background: var(--apps-color);
 }
 
-.filter-btn[data-filter="courses"]:hover, 
-.filter-btn[data-filter="courses"].active {
-    background: var(--courses-color);
+.filter-btn[data-filter="social"]:hover, 
+.filter-btn[data-filter="social"].active {
+    background: var(--social-color);
 }
 
 .catalog {
@@ -239,7 +240,7 @@ body {
 }
 
 .search-container {
-    margin: 2.5rem auto 1.5rem; /* Aumentado el margen superior para más espacio */
+    margin: 2.5rem auto 1.5rem;
     max-width: 600px;
     position: relative;
 }
@@ -270,8 +271,8 @@ body {
 footer {
     text-align: center;
     padding: 1.5rem 0;
-    background: var(--primary-color); /* #00128F */
-    color: white; /* Texto en blanco para mejor legibilidad */
+    background: var(--primary-color);
+    color: white;
     margin-top: 2rem;
     font-size: 0.9rem;
 }
@@ -321,7 +322,7 @@ footer {
     }
     
     .search-container {
-        margin: 2rem auto 1rem; /* Ajuste para móvil manteniendo más espacio */
+        margin: 2rem auto 1rem;
     }
     
     .logo {
@@ -330,7 +331,7 @@ footer {
     
     .main-header {
         padding: 1.2rem 0;
-        margin-bottom: 1.5rem; /* Ajuste para móvil */
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -344,8 +345,9 @@ footer {
         height: 180px;
     }
 }
+
 footer {
-    background: var(--primary-color) !important; /* #00128F */
+    background: var(--primary-color) !important;
     color: white !important;
 }
 
