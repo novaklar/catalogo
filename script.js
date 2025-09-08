@@ -48,29 +48,12 @@ const platformColors = {
     "CapCut Mensual": "#000000",
     "CapCut Trimestral": "#000000",
     
-    // Social+
-    "Facebook Blue": "#1977F3",
-    "Instagram 260+260": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    "Instagram 500+1000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    "Instagram 1000+2000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    "Instagram 500": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    "Instagram 1000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    "Instagram 2000": "linear-gradient(45deg, #833AB4, #E1306C, #F77737, #FFDC80)",
-    
-    "TikTok 500": "#000000",
-    "TikTok 1000": "#000000",
-    "TikTok 2000": "#000000",
-    "TikTok 1000+2000": "#000000",
-    
-    "YouTube 1000": "#E50914",
-    "YouTube 2000": "#E50914",
-    "YouTube 1000 Vistas": "#E50914",
-    "YouTube 1000 Likes": "#E50914",
-    
-    "Telegram 1000": "#28A78C",
-    "Telegram 2000": "#28A78C",
-    
-    "X (Twitter) 1000": "#000000"
+    // Adobe
+    "Photoshop": "#001e36",
+    "Premiere Pro": "#00005b",
+    "Illustrator": "#330000",
+    "After Effects": "#00005b",
+    "Animate": "#00005b"
 };
 
 // Datos de productos actualizados con planes individualizados
@@ -119,7 +102,7 @@ const products = [
     {
         id: 6,
         title: "Paramount+",
-        description: "Perfil individual con acceso a series exclusivas, películas y contenido de CBS, MTV y Nickelodeon.",
+        description: "Perfil individual con acceso a series exclusivas, películas y contenido de CBS, MTV and Nickelodeon.",
         price: "$10.000/mes",
         category: "streaming",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/5.png"
@@ -167,7 +150,7 @@ const products = [
     {
         id: 12,
         title: "VIX+",
-        description: "Perfil individual con acceso a telenovelas y series originales en español sin anuncios.",
+        description: "Perfil individual con acceso to telenovelas y series originales en español sin anuncios.",
         price: "$10.000/mes",
         category: "streaming",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/11.png"
@@ -403,154 +386,46 @@ const products = [
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/19.png"
     },
     
-    // Social+
+    // Adobe
     {
-        id: 24,
-        title: "Facebook",
-        description: "Gestiona redes sociales, contenidos virales y conecta con tu audiencia.",
-        price: "$15.000/mes",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/20.png"
+        id: 2401,
+        title: "Photoshop",
+        description: "Archivo descargable en versión 2023 del programa. Incluye tutorial de descarga.",
+        price: "$12.000",
+        category: "adobe",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/27.png"
     },
     {
-        id: 2501,
-        title: "Instagram 260+260",
-        description: "260 seguidores + 260 likes para mejorar tu perfil.",
-        price: "$14.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
+        id: 2402,
+        title: "Premiere Pro",
+        description: "Archivo descargable en versión 2023 del programa. Incluye tutorial de descarga.",
+        price: "$12.000",
+        category: "adobe",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/28.png"
     },
     {
-        id: 2502,
-        title: "Instagram 500+1000",
-        description: "500 seguidores + 1000 likes para mejorar tu perfil.",
-        price: "$25.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
+        id: 2403,
+        title: "Illustrator",
+        description: "Archivo descargable en versión 2023 del programa. Incluye tutorial de descarga.",
+        price: "$12.000",
+        category: "adobe",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/29.png"
     },
     {
-        id: 2503,
-        title: "Instagram 1000+2000",
-        description: "1000 seguidores + 2000 likes para mejorar tu perfil.",
-        price: "$37.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
+        id: 2404,
+        title: "After Effects",
+        description: "Archivo descargable en versión 2023 del programa. Incluye tutorial de descarga.",
+        price: "$12.000",
+        category: "adobe",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/30.png"
     },
     {
-        id: 2504,
-        title: "Instagram 500",
-        description: "500 seguidores para mejorar tu perfil.",
-        price: "$16.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
-    },
-    {
-        id: 2505,
-        title: "Instagram 1000",
-        description: "1000 seguidores para mejorar tu perfil.",
-        price: "$27.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
-    },
-    {
-        id: 2506,
-        title: "Instagram 2000",
-        description: "2000 seguidores para mejorar tu perfil.",
-        price: "$42.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/21.png"
-    },
-    
-    {
-        id: 2601,
-        title: "TikTok 500",
-        description: "500 seguidores para aumentar tu presencia en TikTok.",
-        price: "$22.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
-    },
-    {
-        id: 2602,
-        title: "TikTok 1000",
-        description: "1000 seguidores para aumentar tu presencia en TikTok.",
-        price: "$36.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
-    },
-    {
-        id: 2603,
-        title: "TikTok 2000",
-        description: "2000 seguidores para aumentar tu presencia en TikTok.",
-        price: "$58.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
-    },
-    {
-        id: 2604,
-        title: "TikTok 1000+2000",
-        description: "1000 likes + 2000 vistas para aumentar tu presencia en TikTok.",
-        price: "$16.000",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/22.png"
-    },
-    
-    {
-        id: 2701,
-        title: "YouTube 1000",
-        description: "1000 suscriptores para hacer crecer tu canal.",
-        price: "$46.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
-    },
-    {
-        id: 2702,
-        title: "YouTube 2000",
-        description: "2000 suscriptores para hacer crecer tu canal.",
-        price: "$77.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
-    },
-    {
-        id: 2703,
-        title: "YouTube 1000 Vistas",
-        description: "1000 vistas para tus videos.",
-        price: "$24.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
-    },
-    {
-        id: 2704,
-        title: "YouTube 1000 Likes",
-        description: "1000 likes para tus videos.",
-        price: "$18.000",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/23.png"
-    },
-    
-    {
-        id: 2801,
-        title: "Telegram 1000",
-        description: "1000 miembros para tu canal o grupo de Telegram.",
-        price: "$28.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/24.png"
-    },
-    {
-        id: 2802,
-        title: "Telegram 2000",
-        description: "2000 miembros para tu canal o grupo de Telegram.",
-        price: "$42.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/24.png"
-    },
-    
-    {
-        id: 29,
-        title: "X (Twitter) 1000",
-        description: "1000 seguidores para aumentar tu impacto en X (Twitter).",
-        price: "$36.500",
-        category: "social",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/25.png"
+        id: 2405,
+        title: "Animate",
+        description: "Archivo descargable en versión 2023 del programa. Incluye tutorial de descarga.",
+        price: "$12.000",
+        category: "adobe",
+        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/31.png"
     }
 ];
 
@@ -621,7 +496,7 @@ function getCategoryName(category) {
         'streaming': 'Streaming',
         'games': 'Juegos',
         'apps': 'Aplicaciones',
-        'social': 'Social+'
+        'adobe': 'Adobe'
     };
     return categories[category] || category;
 }
