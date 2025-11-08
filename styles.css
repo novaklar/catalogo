@@ -1,5 +1,20 @@
+/* Importar las fuentes Poppins */
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('https://raw.githubusercontent.com/novaklar/web/main/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('https://raw.githubusercontent.com/novaklar/web/main/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    --primary-color: #00128F;
+    --primary-color: #006279; /* Cambiado a #006279 */
     --secondary-color: #6C91FF;
     --dark-color: #34495e;
     --light-color: #ecf0f1;
@@ -9,14 +24,14 @@
     --apps-color: #3498db;
     --social-color: #e74c3c;
     --courses-color: #2ecc71;
-    --logo-color: #6C91FF;
+    --logo-color: #59d8b6; /* Cambiado a #59d8b6 */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente principal cambiada */
 }
 
 body {
@@ -27,7 +42,7 @@ body {
 }
 
 .main-header {
-    background: var(--primary-color);
+    background: var(--primary-color); /* Ahora será #006279 */
     padding: 1.5rem 0;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -38,7 +53,7 @@ body {
 .logo {
     height: 50px;
     width: auto;
-    filter: brightness(0) saturate(100%) invert(52%) sepia(90%) saturate(1255%) hue-rotate(200deg) brightness(101%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(557%) hue-rotate(116deg) brightness(93%) contrast(89%); /* Cambiado para #59d8b6 */
 }
 
 .container {
@@ -60,7 +75,7 @@ body {
 }
 
 .filters-container::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
+    background: var(--primary-color); /* Cambiado a primary-color */
     border-radius: 10px;
 }
 
@@ -88,13 +103,13 @@ body {
 }
 
 .filter-btn:hover, .filter-btn.active {
-    background: var(--primary-color);
+    background: var(--primary-color); /* Cambiado a primary-color */
     color: white;
 }
 
 .filter-btn[data-filter="streaming"]:hover, 
 .filter-btn[data-filter="streaming"].active {
-    background: var(--streaming-color);
+    background: var(--primary-color); /* Cambiado a primary-color */
 }
 
 .filter-btn[data-filter="games"]:hover, 
@@ -164,6 +179,7 @@ body {
     font-size: 1rem;
     margin-bottom: 6px;
     color: var(--dark-color);
+    font-family: 'Poppins-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente para títulos */
 }
 
 .product-price {
@@ -271,7 +287,7 @@ body {
 footer {
     text-align: center;
     padding: 1.5rem 0;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Ahora será #006279 */
     color: white;
     margin-top: 2rem;
     font-size: 0.9rem;
