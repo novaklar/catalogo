@@ -56,6 +56,9 @@ const platformColors = {
     "Animate": "#00005b"
 };
 
+// Color para la barra de navegación móvil (se aplica en el CSS)
+const mobileNavColor = "#59d8b6";
+
 // Datos de productos actualizados con planes individualizados
 const products = [
     // Streaming
@@ -63,7 +66,7 @@ const products = [
         id: 1,
         title: "Netflix",
         description: "Perfil individual en cuenta compartida con acceso completo al catálogo. Máxima calidad de video.",
-        price: "$14.000/mes",
+        price: "$15.000/mes", // PRECIO ACTUALIZADO
         category: "streaming",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/1.png"
     },
