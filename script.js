@@ -3,7 +3,6 @@ const platformColors = {
     // Streaming
     "Netflix": "#E50914",
     "HBO Max": "#00040C",
-    "Disney+ Estándar": "linear-gradient(135deg, #022336, #19BAC6)",
     "Disney+ Premium": "linear-gradient(135deg, #022336, #19BAC6)",
     "Prime Video": "#0779FF",
     "Paramount+": "#0665FE",
@@ -56,9 +55,6 @@ const platformColors = {
     "Animate": "#00005b"
 };
 
-// Color para la barra de navegación móvil (se aplica en el CSS)
-const mobileNavColor = "#59d8b6";
-
 // Datos de productos actualizados con planes individualizados
 const products = [
     // Streaming
@@ -66,7 +62,7 @@ const products = [
         id: 1,
         title: "Netflix",
         description: "Perfil individual en cuenta compartida con acceso completo al catálogo. Máxima calidad de video.",
-        price: "$15.000/mes", // PRECIO ACTUALIZADO
+        price: "$15.000/mes",
         category: "streaming",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/1.png"
     },
@@ -79,18 +75,10 @@ const products = [
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/2.png"
     },
     {
-        id: 3,
-        title: "Disney+ Estándar",
-        description: "Perfil individual con acceso a contenido de Disney, Pixar, Marvel, Star Wars y National Geographic.",
-        price: "$11.500/mes",
-        category: "streaming",
-        image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/3.png"
-    },
-    {
         id: 4,
         title: "Disney+ Premium",
         description: "Perfil individual con calidad 4K UHD, HDR y Dolby Atmos. Todo el contenido en máxima calidad.",
-        price: "$14.500/mes",
+        price: "$13.000/mes",
         category: "streaming",
         image: "https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Inec/3.png"
     },
