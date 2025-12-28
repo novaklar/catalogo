@@ -5,14 +5,14 @@ const platformColors = {
     "HBO Max": "#000000",
     "Disney+ Premium": "linear-gradient(135deg, #022336, #19BAC6)",
     "Disney+ Estándar": "linear-gradient(135deg, #022336, #19BAC6)",
-    "Prime Video": "#0779FF", // CORREGIDO a #0779ff
+    "Prime Video": "#0779FF",
     "Paramount+": "#0066FF",
     "Rakuten Viki": "#00B2FF",
-    "DirecTV Go": "#FF0000",
+    "DirecTV Go": "#021327", // CORREGIDO: Cambiado de #FF0000 a #021327
     "IPTV Premium": "#4A00E0",
     "YouTube Premium": "#FF0000",
     "Crunchyroll": "#FF5F01",
-    "VIX+": "linear-gradient(135deg, #FF8448, #FF3D79)", // CORREGIDO a degrade #ff8448 y #ff3d79
+    "VIX+": "linear-gradient(135deg, #FF8448, #FF3D79)",
     "Universal+": "#FBCC11",
     "Plex Premium": "#282A2D",
     "Apple TV+": "#000000",
@@ -49,8 +49,8 @@ const platformColors = {
     // Software
     "ChatGPT": "#10A37F",
     "Duolingo": "#58CC02",
-    "Canva Mensual": "linear-gradient(135deg, #03BFCD, #7A2EE7)", // CORREGIDO a degrade #03bfcd y #7a2ee7
-    "Canva Anual": "linear-gradient(135deg, #03BFCD, #7A2EE7)", // CORREGIDO a degrade #03bfcd y #7a2ee7
+    "Canva Mensual": "linear-gradient(135deg, #03BFCD, #7A2EE7)",
+    "Canva Anual": "linear-gradient(135deg, #03BFCD, #7A2EE7)",
     "CapCut Mensual": "#000000",
     "CapCut Trimestral": "#000000",
     "Photoshop": "#001E36",
@@ -498,7 +498,6 @@ function renderProducts(productsToRender) {
                 <div class="product-price">${product.price}</div>
             </div>
             <div class="product-details">
-                <button class="close-details" aria-label="Cerrar detalles">&times;</button>
                 <span class="product-category">${getCategoryName(product.category)}</span>
                 <div class="product-description">${product.description}</div>
             </div>
@@ -509,30 +508,25 @@ function renderProducts(productsToRender) {
         const platformColor = platformColors[product.title] || 
             (product.category === 'streaming' ? '#0d4c7f' :
              product.category === 'combos' ? 'radial-gradient(circle at center, #0d4c7f, #7fcfda)' :
-             product.category === 'games' ? '#080a33' : '#2ECC71'); // Cambiado a verde para software
+             product.category === 'games' ? '#080a33' : '#2ECC71');
         
         detailsElement.style.background = platformColor;
         
         // Añadir evento de clic para mostrar detalles
-        productCard.addEventListener('click', function(e) {
-            if (!e.target.classList.contains('close-details')) {
-                // Cerrar cualquier overlay activo
-                if (activeOverlay) {
-                    activeOverlay.classList.remove('active');
-                }
-                
-                // Abrir este overlay
+        productCard.addEventListener('click', function() {
+            // Cerrar cualquier overlay activo
+            if (activeOverlay) {
+                activeOverlay.classList.remove('active');
+            }
+            
+            // Si este no es el overlay activo, abrirlo
+            if (activeOverlay !== this) {
                 this.classList.add('active');
                 activeOverlay = this;
+            } else {
+                // Si ya está activo, cerrarlo
+                activeOverlay = null;
             }
-        });
-        
-        // Añadir evento para cerrar detalles
-        const closeBtn = productCard.querySelector('.close-details');
-        closeBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            productCard.classList.remove('active');
-            activeOverlay = null;
         });
         
         catalog.appendChild(productCard);
@@ -564,12 +558,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         }
         
         renderProducts(filteredProducts);
-        
-        // ELIMINADO: El scroll automático al catálogo
-        // document.getElementById('productCatalog').scrollIntoView({
-        //     behavior: 'smooth',
-        //     block: 'start'
-        // });
     });
 });
 
@@ -604,8 +592,7 @@ document.getElementById('searchInput').addEventListener('input', function() {
 document.addEventListener('click', function(e) {
     if (activeOverlay && 
         !e.target.closest('.product-details') && 
-        !e.target.closest('.product-card') &&
-        !e.target.classList.contains('close-details')) {
+        !e.target.closest('.product-card')) {
         
         activeOverlay.classList.remove('active');
         activeOverlay = null;
