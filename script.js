@@ -524,8 +524,6 @@ function renderProducts(productsToRender) {
                 // Abrir este overlay
                 this.classList.add('active');
                 activeOverlay = this;
-                
-                // NO bloquear el scroll del body - eliminado esta línea
             }
         });
         
@@ -535,8 +533,6 @@ function renderProducts(productsToRender) {
             e.stopPropagation();
             productCard.classList.remove('active');
             activeOverlay = null;
-            
-            // NO restaurar el scroll del body - eliminado esta línea
         });
         
         catalog.appendChild(productCard);
@@ -554,7 +550,7 @@ function getCategoryName(category) {
     return categories[category] || category;
 }
 
-// Filtrado por categoría
+// Filtrado por categoría - SIN auto-scroll
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', function() {
         document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -569,11 +565,11 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         
         renderProducts(filteredProducts);
         
-        // Scroll suave al inicio del catálogo
-        document.getElementById('productCatalog').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+        // ELIMINADO: El scroll automático al catálogo
+        // document.getElementById('productCatalog').scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'start'
+        // });
     });
 });
 
