@@ -107,61 +107,66 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Colores intercalados SOLO en estado activo */
+/* Colores intercalados SOLO en estado activo - COLORES SÓLIDOS */
 .filter-btn[data-filter="all"].active {
-    background: #0d4c7f; /* Primer color */
+    background: #0d4c7f; /* Primer color - SÓLIDO */
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(13, 76, 127, 0.3);
 }
 
 .filter-btn[data-filter="streaming"].active {
-    background: #7fcfda; /* Segundo color */
+    background: #7fcfda; /* Segundo color - SÓLIDO */
     color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(127, 207, 218, 0.3);
 }
 
 .filter-btn[data-filter="combos"].active {
-    background: #0d4c7f; /* Tercer color (alterna con el primero) */
+    background: #0d4c7f; /* Tercer color - SÓLIDO */
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(13, 76, 127, 0.3);
 }
 
 .filter-btn[data-filter="games"].active {
-    background: #7fcfda; /* Cuarto color (alterna con el segundo) */
+    background: #7fcfda; /* Cuarto color - SÓLIDO */
     color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(127, 207, 218, 0.3);
 }
 
 .filter-btn[data-filter="software"].active {
-    background: #0d4c7f; /* Quinto color (alterna con el primero) */
+    background: #0d4c7f; /* Quinto color - SÓLIDO */
     color: white;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(13, 76, 127, 0.3);
 }
 
-/* Hover también muestra el color (opcional, más amigable para UX) */
+/* Hover también muestra el color SÓLIDO (mejor UX) */
 .filter-btn[data-filter="all"]:hover {
-    background: rgba(13, 76, 127, 0.1);
+    background: #0d4c7f; /* SÓLIDO en hover */
+    color: white;
 }
 
 .filter-btn[data-filter="streaming"]:hover {
-    background: rgba(127, 207, 218, 0.1);
+    background: #7fcfda; /* SÓLIDO en hover */
+    color: var(--accent-color);
 }
 
 .filter-btn[data-filter="combos"]:hover {
-    background: rgba(13, 76, 127, 0.1);
+    background: #0d4c7f; /* SÓLIDO en hover */
+    color: white;
 }
 
 .filter-btn[data-filter="games"]:hover {
-    background: rgba(127, 207, 218, 0.1);
+    background: #7fcfda; /* SÓLIDO en hover */
+    color: var(--accent-color);
 }
 
 .filter-btn[data-filter="software"]:hover {
-    background: rgba(13, 76, 127, 0.1);
+    background: #0d4c7f; /* SÓLIDO en hover */
+    color: white;
 }
 
 .catalog {
