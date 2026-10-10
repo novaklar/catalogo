@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo novaklar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogo novaklar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container">
-            <img src="https://raw.githubusercontent.com/novaklar/web/refs/heads/main/cloud.svg" alt="Novaklar Logo" class="logo">
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="search-container">
-            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input type="text" class="search-bar" placeholder="Buscar plataformas..." id="searchInput">
-        </div>
-        
-        <div class="filters-container">
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="streaming">Streaming</button>
-                <button class="filter-btn" data-filter="combos">Combos</button>
-                <button class="filter-btn" data-filter="games">Juegos</button>
-                <button class="filter-btn" data-filter="software">Software</button>
-            </div>
-        </div>
-        
-        <div class="catalog" id="productCatalog">
-            <!-- Los productos se cargarán aquí dinámicamente -->
-        </div>
-    </div>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Catalogo novaklar. Todos los derechos reservados.</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+<header class="main-header">
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/novaklar/catalogo/refs/heads/main/Logo/novaklar.svg" alt="Novaklar Logo" class="logo">
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="search-container">
+    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    <input type="text" class="search-bar" placeholder="Buscar plataformas..." id="searchInput">
+  </div>
+
+  <div class="filters-container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="streaming">Streaming</button>
+      <button class="filter-btn" data-filter="combos">Combos</button>
+      <button class="filter-btn" data-filter="games">Juegos</button>
+      <button class="filter-btn" data-filter="apps">Apps</button>
+    </div>
+  </div>
+
+  <div class="catalog" id="productCatalog">
+    <!-- Los productos se cargarán aquí dinámicamente -->
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Catalogo novaklar. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
